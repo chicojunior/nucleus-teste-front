@@ -2,18 +2,13 @@
 
 ###Teste de seleção front-end da empresa Nucleus
 
-*Candidato:* Francisco do Vale
+**Candidato**: Francisco do Vale
 
 Tecnologias Utilizadas:
 
 * HTML5
-
 * CSS3
-
 * SCSS
-
 * Bootstrap
-
 * NPM
-
 * ...
