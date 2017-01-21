@@ -1,0 +1,43 @@
+{
+  "name": "nucleus",
+  "version": "1.0.0",
+  "description": "Teste de seleção para vaga de estágio",
+  "main": "index.js",
+  "author": "Francisco do Vale <juniordev2@gmail.com>",
+  "homepage": "https://github.com/chicojunior/nucleus-teste-front#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicojunior/nucleus-teste-front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chicojunior/nucleus-teste-front/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.16.1",
+    "node-sass": "^3.7.0",
+    "npm-check": "^5.2.3",
+    "npm-run-all": "^3.1.0",
+    "onchange": "^3.0.2",
+    "uglify-js": "^2.7.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "clean:scripts": "rm -rf js/main.js",
+    "sass": "node-sass --output-style compressed -o css src/scss/main.scss",
+    "cssnano": "cssnano css/main.css css/main.min.css",
+    "uglify": "uglifyjs js/main.js -c > js/main.min.js",
+    "serve": "browser-sync start --server --files css/*.css",
+    "build:styles": "run-s sass",
+    "build:scripts": "cp -rf src/js js && run-s uglify",
+    "build:images": "cp -rf src/img img",
+    "build:vendors": "cp -rf src/vendor vendor",
+    "build:fonts": "cp -rf src/fonts fonts",
+    "build": "run-s build:styles build:scripts build:images build:vendors",
+    "watch:styles": "onchange 'src/css' -- npm run build:styles",
+    "watch:scripts": "onchange 'src/js' -- npm run build:scripts",
+    "watch:images": "onchange 'src/img' -- npm run build:images",
+    "watch:vendors": "onchange 'src/vendors' -- npm run build:vendors",
+    "watch": "run-p watch:styles watch:scripts watch:images watch:vendors serve",
+    "start": "run-s build watch"
+  }
+}
