@@ -1,87 +1,21 @@
+@import 'header';
 @import 'banner';
-.navbar-blue {
+@import 'servicos';
+@import 'sobre';
+@import 'contato';
+@import 'footer';
+
+#sobre, #footer {
   background-color: #2c3e50;
   color: #fff;
 }
 
-/*.jumbotron h1 {
-  font-size: 65px;
-  line-height: 72px;
-  font-family: Helvetica, sans-serif;
-}*/
-
-.responsive-button {
-  margin-top: 14px;
-}
-
-.navbar-toggler-icon {
-  color: #fff;
-}
-
-.banner h1 {
-  text-transform: uppercase;
-}
-
-.banner .call {
-  padding-top: 100px;
-}
-
-.sobre, .footer {
-  background-color: #2c3e50;
-  color: #fff;
-}
-
-.brand-img {
-  width: 70px;
-  height: 60px;
-}
-
-.brand-span {
-  line-height: inherit;
-  color: #fff;
-  font-size: 38px;
-}
-
-.navbar-right {
-  position: absolute;
-  right: 1%;
-}
-
-.navbar-right li {
-  padding: 15px 30px;
-}
-
-body, .navbar-left {
+body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.nav-link {
-  color: #fff;
-  font-family: monospace;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/*.navbar-nav li a {
-  padding: 15px;
-}*/
-
-/*.nav-right {
-  float: right;
-  margin-left: 98px;
-}*/
-.test {
-
-}
-.container {
-  position: relative;
-}
-
-
-@media (max-width: 500px) {
-  .brand-span {
-    display: none;
-  }
+section {
+  padding: 20px 0;
 }
 
 @media (max-width: 576px) {}

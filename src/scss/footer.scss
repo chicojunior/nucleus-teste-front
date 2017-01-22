@@ -1,0 +1,41 @@
+#footer {
+
+  padding: 20px 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+
+  img {
+    width: 70px;
+  }
+
+  a, i, .footer-span {
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    :hover {
+      color: #2FA175;
+    }
+  }
+
+  .lower-row {
+    //text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer-span {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+}

@@ -4,29 +4,30 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Consultoria, Contabilidade, Tecnologia" >
     <meta name="description" content="Empresa de consultoria contábil e tecnológica" >
-    <meta property="og:title" content="Valle Consultoria Website" />
+    <meta property="og:title" content="Valle Serviços Website" />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Valle Consultoria</title>
+    <title>Valle Soluções</title>
 
     <!--[if lt IE 9]>
 	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	  <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
+    <header id="header">
       <!-- <div class="jumbotron"></div> -->
       <div class="navbar-blue">
         <div class="container">
           <div class="navbar navbar-toggleable-md navbar-inverse" style="background-color: #2c3e50;">
             <div class="navbar-left">
               <a class="navbar-brand" href="#">
-                <img src="img/valle-logo.png" class="d-inline-block align-top brand-img"> <span class="brand-span">Valle Consultoria</span>
+                <img src="img/valle-logo.png" class="d-inline-block align-top brand-img"> <span class="brand-span">Valle Soluções</span>
               </a>
             </div>
             <div class="navbar-right">
@@ -36,16 +37,16 @@
               <div class="collapse nav-right navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav nav-right mr-auto mt-2 mt-md-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span>home</span></a>
+                    <a class="nav-link header-link" href="#"><span>home</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span>serviços</span></a>
+                    <a class="nav-link header-link" href="#servicos"><span>serviços</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span>sobre</span></a>
+                    <a class="nav-link header-link" href="#sobre"><span>sobre</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span>contato</span></a>
+                    <a class="nav-link header-link" href="#contato"><span>contato</span></a>
                   </li>
                 </ul>
               </div>
@@ -53,70 +54,125 @@
           </div>
         </div>
       </div>
-
-      <!-- <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a class="navbar-brand" href="#">
-          <img src="img/valle-logo.png" class="d-inline-block align-top brand-img"> Valle Consultoria
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
     </header>
 
     <main>
-      <section class="banner">
-        <!-- <h1>Banner</h1> -->
-        <!-- <h1>você tem uma idéia.</h1>
-        <h1>nós te ajudamos a tirá-la do papel</h1> -->
-
+      <section id="banner">
         <div class="container">
           <div class="call">
-            <h1>bem vindo à valle consultoria</h1>
-            <p>Nossos serviços de consultoria irão te ajudar a encontar o caminho certo para o sucesso.</p>
+            <h1>bem vindo à valle serviços</h1>
+            <p>Nossos serviços de consultoria e assessoria irão te ajudar a encontar o caminho certo para o sucesso.</p>
             <button type="button" class="btn btn-success">NOSSOS SERVIÇOS</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <h2>Consultoria</h2>
+              <img class="servicos-img" src="img/consultoria.png" alt="consultoria">
+              <p>Consultoria nas áreas contábil, de recursos humanos e tecnologia da informação.</p>
+            </div>
+            <div class="col-lg">
+              <h2>Assessoria</h2>
+              <img class="servicos-img" src="img/assessoria.png" alt="consultoria">
+              <p>Assessoria contábil comercial e de recursos humanos na área pública.</p>
+            </div>
+            <div class="col-lg">
+              <h2>Mentoria</h2>
+              <img class="servicos-img" src="img/mentoria.png" alt="consultoria">
+              <p>Mentoria de empresas e processos.</p>
+            </div>
           </div>
         </div>
 
       </section>
 
-      <section class="servicos">
-        <h1>Serviços</h1>
+      <section id="sobre">
+        <div class="container">
+          <div class="row">
+            <div class="col-md right-col">
+              <h2>Quem somos</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum diam in suscipit tincidunt. Nullam ultricies nunc erat, dictum pretium velit consequat ut. Etiam quis neque nec nibh lacinia suscipit suscipit id ligula. Quisque enim ante, pharetra vel odio a, mattis venenatis ipsum. Curabitur et magna arcu. Quisque hendrerit volutpat metus sit amet rhoncus. Cras consectetur tristique elit vel imperdiet. Praesent id imperdiet quam, nec rutrum enim. Curabitur commodo imperdiet ultrices.</p>
+              <p>Aenean vitae lobortis metus, quis vehicula ipsum. Mauris convallis, metus ac sodales rutrum, quam libero porta mauris, eget faucibus magna augue id dolor. Suspendisse consectetur nibh velit, ac gravida urna consectetur non. Nam mollis est tempor nisl malesuada varius. Suspendisse potenti. Vestibulum eu ex posuere, efficitur arcu in, imperdiet dolor.</p>
+            </div>
+            <div class="col-md left-col">
+              <img src="img/network.png" alt="">
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
-      <section class="sobre">
-        <h1>Sobre</h1>
-      </section>
+      <section id="contato">
+        <div class="container">
+          <h2>Entre em contato</h2>
+          <form>
+            <div class="form-group row">
+              <div class="col-lg">
+                <div>
+                  <label for="inputNome">Nome</label>
+                  <input type="text" class="form-control" id="inputNome">
+                </div>
+                <div>
+                  <label for="inputEmail">Email</label>
+                  <input type="text" class="form-control" id="inputEmail">
+                </div>
+                <div>
+                  <label for="inputTelefone">Telefone</label>
+                  <input type="text" class="form-control" id="inputTelefone">
+                </div>
+              </div>
+              <div class="col-lg">
+                <label for="inputMensagem">Mensagem</label>
+                <textarea name="mensagem" rows="7" cols="70" id="inputMensagem"></textarea>
+              </div>
+            </div>
+            <div class="form-group row button-form">
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+          </form>
+        </div>
 
-      <section class="contato">
-        <h1>Contato</h1>
+
       </section>
     </main>
 
-    <footer class="footer">
-      <h1>Footer</h1>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="" href="#">
+              <img src="img/valle-logo.png" class=""><span class="footer-span">Valle Soluções</span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col lower-row">
+            <p>2017</p>
+            <p>VALLE SOLUÇÕES</p>
+          </div>
+          <div class="col lower-row">
+            <p>contato</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:juniordev2@gmail.com">valle@solucoes.com.br</a></p>
+          </div>
+          <div class="col lower-row">
+            <p>redes sociais</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   </body>

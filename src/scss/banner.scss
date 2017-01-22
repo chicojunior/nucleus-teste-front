@@ -1,11 +1,19 @@
-.banner {
-
+#banner {
   width: 100%;
-  height: 400px;
+  //margin-top: 83px;
+  min-height: 400px;
   text-align: center;
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .call {
+    padding-top: 100px;
+  }
 
 }

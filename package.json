@@ -14,8 +14,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.16.1",
-    "cssnano": "^3.8.0",
-    "cssnano-cli": "^1.0.4",
     "node-sass": "^3.7.0",
     "npm-check": "^5.2.3",
     "npm-run-all": "^3.1.0",
@@ -27,7 +25,6 @@
     "clean": "rm -rf dist && mkdir dist",
     "clean:scripts": "rm -rf dist/js/main.js",
     "sass": "node-sass --output-style compressed -o dist/css src/scss/main.scss",
-    "cssnano": "cssnano dist/css/main.css dist/css/main.min.css",
     "uglify": "uglifyjs dist/js/main.js -c > dist/js/main.min.js",
     "serve": "browser-sync start -s dist -f dist",
     "build:templates": "cp -rf src/*.html dist",
