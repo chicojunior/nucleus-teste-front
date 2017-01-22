@@ -28,17 +28,19 @@
     "uglify": "uglifyjs dist/js/main.js -c > dist/js/main.min.js",
     "serve": "browser-sync start -s dist -f dist",
     "build:templates": "cp -rf src/*.html dist",
+    "build:firebase": "cp -rf src/*.html public",
     "build:styles": "run-s sass",
     "build:scripts": "cp -rf src/js dist && run-s uglify && run-s clean:scripts",
     "build:images": "cp -rf src/img dist",
     "build:vendor": "cp -rf src/vendor dist",
-    "build": "run-s clean build:templates build:styles build:scripts build:images build:vendor",
+    "build": "run-s clean build:templates build:styles build:scripts build:images build:vendor build:firebase",
     "watch:templates": "onchange 'src/*.html' -- npm run build:templates",
+    "watch:firebase": "onchange 'src/*.html' -- npm run build:firebase",
     "watch:styles": "onchange 'src/scss' -- npm run build:styles",
     "watch:scripts": "onchange 'src/js' -- npm run build:scripts",
     "watch:images": "onchange 'src/img' -- npm run build:images",
     "watch:vendor": "onchange 'src/vendor' -- npm run build:vendor",
-    "watch": "run-p watch:templates watch:styles watch:scripts watch:images watch:vendor serve",
+    "watch": "run-p watch:templates watch:styles watch:scripts watch:images watch:vendor watch:firebase serve",
     "start": "run-s build watch"
   }
 }
